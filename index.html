@@ -9,8 +9,9 @@
 
 <body>
 	<header>
-		<a class="logo" href="#">
-			<img src="img/logo.png" width="70" height="40" alt="Логотип">
+		<nav>
+			<a class="logo" href="#">
+				<img src="img/logo.png" width="70" height="40" alt="Логотип"></a>
 			<ul class="nav-list">
 				<li class="nav-list__item">
 					<a href="#">Главная</a>
@@ -25,20 +26,20 @@
 					<a href="#">Отзывы</a>
 				</li>
 			</ul>
-			<a href="tel:+78008234888">8 (800) 333-55-99</a>
-		</a>
+		</nav>
+		<a href="tel:88003335599">8 (800) 333-55-99</a>
 	</header>
 	<main>
 		<h1 class="visually-hidden">Главная страница студии дизайна «Brume»</h1>
 		<section class="first-screen">
 			<h2>Дизайн интерьеров</h2>
-			<img src="img/promo.jpg" width="1163" height="595" alt="Дизайн интерьеров">
 			<p>Воплотим в жизнь интерьер, который будет радовать лаконичностью и уютом.</p>
-			<a href="#">ЗАКАЗАТЬ ДИЗАЙН</a>
+			<img src="img/promo.jpg" width="1163" height="595" alt="Дизайн интерьеров">
+			<a href="#">Заказать дизайн</a>
 		</section>
 		<section class="advantages">
 			<h2 class="visually-hidden">Наши преимущества</h2>
-			<ol class="advantages-list">
+			<ul class="advantages-list">
 				<li class="advantages-list__item">
 					<h3>Берем весь ремонт на себя</h3>
 					<p>Заботы по дизайну и отделке помещения возьмём на себя, останется дождаться завершения работ и наслаждаться результатом</p>
@@ -55,48 +56,35 @@
 					<h3>Работаем на выгодных условиях</h3>
 					<p>Ценовая политика студии очень лояльна, мы осуществляем контроль всего процесса работы и получаем результат который делает клиентов счастливыми</p>
 				</li>
-			</ol>
+			</ul>
 		</section>
-		<section>
-			<section class="services">
-				<h2>Наши услуги</h2>
-				<ul class="services-nav-list">
-					<li class="services-nav-list__item">
-						<a href="#">Дизайн жилого помещения</a>
-					</li>
-				</ul>
-				<ul class="services-nav-list">
-					<li class="services-nav-list__item">
-						<a href="#">Дизайн отельных комнат</a>
-					</li>
-				</ul>
-				<ul class="services-nav-list">
-					<li class="services-nav-list__item">
-						<a href="#">Дизайн коммерческих объектов</a>
-					</li>
-				</ul>
-				<ul class="services-nav-list">
-					<li class="services-nav-list__item">
-						<a href="#">Ремонт под ключ</a>
-					</li>
-				</ul>
-				<ul class="services-nav-list">
-					<li class="services-nav-list__item">
-						<a href="#">Отделочные работы</a>
-					</li>
-				</ul>
-				<ul class="services-nav-list">
-					<li class="services-nav-list__item">
-						<a href="#">Выезд дизайнера на дом</a>
-					</li>
-				</ul>
-			</section>
-			<section>
-				<h2>Дизайн коммерческих объектов</h2>
-				<p>Работая с коммерческими объектами, студия изучает целевую аудиторию, создаем коммерческие интерьеры такими, чтобы посетители кафе, бара, гостиницы хотели возвращаться в интерьер снова и снова</p>
-				<p>532 проекта</p>
-				<a href="#">Консультация</a>
-			</section>
+		<section class="services">
+			<h2>Наши услуги</h2>
+			<ul class="services-nav-list">
+				<li class="services-nav-list__item">
+					<a href="#">Дизайн жилого помещения</a>
+				</li>
+				<li class="services-nav-list__item">
+					<a href="#">Дизайн отельных комнат</a>
+				</li>
+				<li class="services-nav-list__item">
+					<a href="#">Дизайн коммерческих объектов</a>
+				</li>
+				<li class="services-nav-list__item">
+					<a href="#">Ремонт под ключ</a>
+				</li>
+				<li class="services-nav-list__item">
+					<a href="#">Отделочные работы</a>
+				</li>
+				<li class="services-nav-list__item">
+					<a href="#">Выезд дизайнера на дом</a>
+				</li>
+			</ul>
+			<img src="img/image.jpg" width="878" height="390" alt="Дизайн коммерческих объектов">
+			<h3>Дизайн коммерческих объектов</h3>
+			<p>Работая с коммерческими объектами, студия изучает целевую аудиторию, создаем коммерческие интерьеры такими, чтобы посетители кафе, бара, гостиницы хотели возвращаться в интерьер снова и снова</p>
+			<p>532 проекта</p>
+			<a href="#">Консультация</a>
 		</section>
 		<section class="stages">
 			<h2 class="visually-hidden">Этапы работы</h2>
@@ -131,49 +119,51 @@
 			<h2>Мечтаете об интерьере от Brume?</h2>
 			<p>Оставьте контактные данные, менеджер свяжется с вами в течение 15 минут, для уточнения всех деталей.</p>
 			<form action="#" method="POST">
-				<label>Имя <input type="text" name="name" placeholder="Имя*" required></label>
-				<label>Имя <input type="tel" name="tel" placeholder="Телефон*" required></label>
-				<label>Имя <input type="email" name="email" placeholder="E-mail"></label>
+				<label for="id1">Имя </label>
+				<input type="text" id="id1" name="name" placeholder="Имя" required>
+				<label for="id2">Телефон </label>
+				<input type="tel" id="id2" name="tel" placeholder="Телефон" required>
+				<label for="id3">E-mail </label>
+				<input type="email" id="id3" name="email" placeholder="E-mail">
 				<button type="submit">Отправить</button>
 			</form>
 			<p>Нажимая на кнопку, вы соглашаетесь с условиями обработки персональных данных</p>
+			<img src="img/image-2.jpg" width="683" height="683" alt="Что-то там">
 		</section>
 		<section class="reviews">
 			<h2>Отзывы наших клиентов</h2>
 			<blockquote>
-				<p>Александра Холодная</p>
+				<cite>Александра Холодная</cite>
 				<p>Услуга: интерьер детской</p>
 				<p>Спасибо студии за замечательный интерьер для моей 4-х летней дочки! Работа прошла быстро и легко, команда выполнила всё точно в срок, сделали все как мы и хотели.
 					В следующий раз обратимся к Brume!</p>
 				<img src="img/photo-1.jpg" width="318" height="284" alt="Александра Холодная">
 			</blockquote>
-			<ul>
-				<li>
-					<a href="#">Первый слайд</a>
-				</li>
-				<li>
-					<a href="#">Второй слайд</a>
-				</li>
-				<li>
-					<a href="#">Третий слайд</a>
-				</li>
-				<li>
-					<a href="#">Четвертый слайд</a>
-				</li>
-			</ul>
-		</section>
-		<footer>
-			<p class="copyright">Brume interior, 2017 ©</p>
-			<div><img src="img/logo.png" width="70" height="40" alt="Логотип">
-				<ul>
-					<li><a href="#">ВКонтакте</a></li>
-					<li><a href="#">Instagram</a></li>
-					<li><a href="#">Facebook</a></li>
-				</ul>
+			<div>
+				<button>Первый слайд</button>
+
+				<button>Второй слайд</button>
+
+				<button>Третий слайд</button>
+
+				<button>Четвертый слайд</button>
+
 			</div>
-			<p>HolodnayaDesign</p>
-		</footer>
+
+
+		</section>
+
 	</main>
+	<footer>
+		<p class="copyright">Brume interior, 2017 ©</p>
+		<p>HolodnayaDesign</p>
+		<a href="#"><img src="img/logo.png" width="70" height="40" alt="Логотип"></a>
+		<ul>
+			<li><a href="#">ВКонтакте</a></li>
+			<li><a href="#">Instagram</a></li>
+			<li><a href="#">Facebook</a></li>
+		</ul>
+	</footer>
 </body>
 
 </html>
